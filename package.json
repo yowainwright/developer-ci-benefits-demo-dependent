@@ -1,0 +1,9 @@
+{
+  "name": "developer-ci-benefits-demo-dependent",
+  "version": "0.0.1",
+  "description": "A dependent repository of the developer-ci-benefits-demo repo demonstrating the full ci workflow",
+  "main": "index.js",
+  "repository": "git@github.com:yowainwright/developer-ci-benefits-demo-dependent.git",
+  "author": "Jeff Wainwright <yowainwright@gmail.com>",
+  "license": "MIT"
+}
