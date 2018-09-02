@@ -15,5 +15,8 @@
       2,
       "never"
     ]
+  },
+  "env": {
+    "jest": true
   }
 }

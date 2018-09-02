@@ -9,9 +9,6 @@
  */
 import asserter from 'developer-ci-benefits-demo'
 
-const expected = 1
-const result = 1
-const message = '1 === 1'
-
-asserter(expected, result, message)
-
+export default function asserterFunc (expected, result, message) {
+  return asserter(expected, result, message)
+}

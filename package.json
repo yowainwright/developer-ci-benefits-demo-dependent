@@ -7,10 +7,32 @@
   "author": "Jeff Wainwright <yowainwright@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "7.0.0-beta.44",
+    "@babel/preset-env": "7.0.0-beta.40",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "23.0.0",
     "developer-ci-benefits-demo": "0.0.7",
-    "eslint": "^5.5.0",
-    "eslint-config-dollarshaveclub": "^3.1.0",
-    "markdown-spellcheck": "^1.3.1",
-    "markdownlint-cli": "^0.13.0"
+    "eslint": "5.5.0",
+    "eslint-config-dollarshaveclub": "3.1.0",
+    "husky": "0.14.3",
+    "jest": "23.5.0",
+    "markdown-spellcheck": "1.3.1",
+    "markdownlint-cli": "0.13.0",
+    "standard-version": "4.4.0",
+    "write-good": "0.13.1"
+  },
+  "scripts": {
+    "grammar": "write-good *.md --no-passive",
+    "markdownlint": "markdownlint *.md -i CHANGELOG.md",
+    "prepush": "npm test",
+    "pre-commit-msg": "Echo 'Running pre-commit checks...' && exit 0",
+    "release": "standard-version",
+    "postrelease": "git push --follow-tags origin master && npm publish",
+    "spelling": "mdspell '**/*.md' '!**/node_modules/**/*.md' --ignore-numbers",
+    "spelling:ci": "mdspell '**/*.md' '!**/node_modules/**/*.md' --ignore-numbers --report",
+    "start": "npm i",
+    "test:jest": "jest --coverage",
+    "test": "npm run markdownlint && npm run grammar && npm run spelling && npm run test:jest",
+    "test:ci": "npm run markdownlint && npm run grammar && npm run spelling:ci && npm run test:jest"
   }
 }
