@@ -5,5 +5,12 @@
   "main": "index.js",
   "repository": "git@github.com:yowainwright/developer-ci-benefits-demo-dependent.git",
   "author": "Jeff Wainwright <yowainwright@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "developer-ci-benefits-demo": "0.0.7",
+    "eslint": "^5.5.0",
+    "eslint-config-dollarshaveclub": "^3.1.0",
+    "markdown-spellcheck": "^1.3.1",
+    "markdownlint-cli": "^0.13.0"
+  }
 }
