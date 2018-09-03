@@ -1,4 +1,4 @@
-[Developer CI Benefits Demo Dependent Banner](https://jeffry.in/assets/developer-ci-benefits/developer-ci-benefits-demo-dependent.svg?no-cache=1g)
+![Developer CI Benefits Demo Dependent Banner](https://jeffry.in/assets/developer-ci-benefits/developer-ci-benefits-demo-dependent.svg?no-cache=1g)
 
 # Developer CI Benefits Demo Dependent
 
