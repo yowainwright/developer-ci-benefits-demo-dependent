@@ -1,4 +1,4 @@
-import asserterFunc from '..'
+import { asserterFunc } from '..'
 
 describe('asserterFunc', () => {
   it('asserts', () => {
