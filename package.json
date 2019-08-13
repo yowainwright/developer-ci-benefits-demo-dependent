@@ -7,18 +7,19 @@
   "author": "Jeff Wainwright <yowainwright@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "7.5.0",
-    "@babel/preset-env": "7.5.3",
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "7.5.5",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "23.4.2",
     "developer-ci-benefits-demo": "0.0.8",
-    "eslint": "6.0.1",
-    "husky": "2.7.0",
+    "eslint": "6.1.0",
+    "eslint-config-dollarshaveclub": "5.2.3",
+    "husky": "3.0.3",
     "jest": "^23.5.0",
     "markdown-spellcheck": "1.3.1",
     "markdownlint-cli": "0.17.0",
-    "standard-version": "6.0.1",
-    "write-good": "1.0.1"
+    "standard-version": "7.0.0",
+    "write-good": "1.0.2"
   },
   "scripts": {
     "grammar": "write-good *.md --no-passive",
